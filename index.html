@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Paint the web with CSS</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,113 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1><span class="pink">Paint</span> the Web</h1
+					<h2>creating art with <span class="pink">CSS</span></h2>
+				</section>
+				<section>
+					<h2>Eva Lettner</h2>
+					<ul>
+						<li>Software Eningeer & UI Lead</li>
+						<li>Coding Artist</li>
+					</ul>
+				</section>
+				<section>
+					<h3>We are</h3>
+					<h1>Creators!</h1>
+				</section>
+				<section>
+					<h2>Lets draw something!</h2>
+				</section>
+				<section>
+					<h2>Shapes</h2>
+				</section>
+				<section>
+					<h2 style="margin-bottom: 10rem">Rectangles</h2>
+					<pre><code class="liveCoding css left" data-livecoding-id="rectangle" contenteditable>
+.rectangle {
+	width: 25rem;
+	height: 25rem;
+}
+					</code></pre>
+
+					<div id="rectangle" class="right">
+						<div class="rectangle"></div>
+					</div>
+				</section>
+				<section>
+					<h2 style="margin-bottom: 10rem">Triangles</h2>
+					<pre><code class="liveCoding css left" data-livecoding-id="triangle" contenteditable>
+.triangle {
+	width: 25rem;
+	height: 25rem;
+}
+					</code></pre>
+
+					<div id="triangle" class="right">
+						<div class="triangle"></div>
+					</div>
+				</section>
+				<section>
+					<h4>// insert demo here</h4>
+				</section>
+				<section>
+					<h2>Pseudo Elements</h2>
+				</section>
+				<section>
+					<h4>// this is where the demo goes</h4>
+				</section>
+				<section>
+					<h2>Box-Shadow</h2>
+				</section>
+				<section>
+					<h4>
+						// this is where the demo goes
+					</h4>
+				</section>
+				<section>
+					// the big reveal
+				</section>
+				<section>
+					<h1>Why?</h1>
+				</section>
+				<section>
+					<h1>Why <span class="pink">not</span>?</h1>
+				</section>
+				<section>
+					<h2>The benefits</h2>
+					<ul>
+						<li>It's fun!</li>
+						<li>You learn new things</li>
+						<li>Exposure</li>
+					</ul>
+				</section>
+				<section>
+					<h2>CSS images vs SVGs?</h2>
+					<div class="left">
+						<h4>CSS</h4>
+						<ul>
+							<li>🦄 no software needed</li>
+							<li>🦄 small size</li>
+							<li>💩 time</li>
+							<li>💩 accessibility</li>
+						</ul>
+					</div>
+					<div class="right">
+						<h4>SVG</h4>
+						<ul>
+							<li>💩 vector software</li>
+							<li>🦄 easy to animate</li>
+							<li>💩 complicated?</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h1>Create!</h1>
+				</section>
+
+				<p class="credits">@eva_trostlos</p>
+
 			</div>
 		</div>
 
@@ -42,9 +147,13 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/live-coding/live-coding.js', async: true, condition: function() { return !!document.body.classList; }}
 				]
 			});
 		</script>
 	</body>
 </html>
+
+
+

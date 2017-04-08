@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
@@ -204,6 +204,29 @@ body {
 .reveal small * {
   vertical-align: top; }
 
+.credits {
+  position: absolute;
+  bottom: 0px;
+  font-size: 1.4rem !important;
+  color: #f3d7ac;
+}
+
+.pink {
+  color: rgb(255, 0, 136);
+}
+
+.left li, .right li {
+    list-style-type: none;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
@@ -288,3 +311,12 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+
+pre {
+  margin-top: 5rem;
+}
+
+.rectangle {
+  background-color: #eee;
+}
