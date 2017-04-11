@@ -314,7 +314,11 @@ body {
 
 
 pre {
-  margin-top: 5rem;
+  margin-top: 2rem;
+}
+
+code {
+  width: 55%;
 }
 
 .rectangle {
